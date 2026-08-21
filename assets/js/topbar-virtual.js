@@ -164,19 +164,6 @@ $(document).ready(function () {
 });
 
 $(document).ready(function() {
-  $('#sideel').click(function() {
-    $(this).parents('.config').toggleClass('active');
-  });
-  
-  $('body').data('bodyClassList', '');
-  
-  $('.color-item').click(function() {
-    var cls = $(this).data('class');
-    
-    $('body').attr('class', $('body').data('bodyClassList'));
-    $('body').addClass(cls);
-  });
-  
   $('#change-page').on('change', function() {
     var url = $(this).val() + '.html';
     
